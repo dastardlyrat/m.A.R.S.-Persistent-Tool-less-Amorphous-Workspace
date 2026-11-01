@@ -65,7 +65,7 @@ Missing, unknown, unestablished, and inapplicable values require explicit semant
 
 ## Source package and files
 
-The **original portable v0.2.0 archive** is stored under `releases/`. Its source manifest (`MANIFEST.json`) records SHA-256 hashes for the 14 content files. Source files retain their original relative structure:
+The original portable v0.2.0 archive has been validated locally but **has not yet been committed to this repository**. The source manifest (`MANIFEST.json`) records SHA-256 hashes for the 14 content files. Within the source archive, files retain their original relative structure:
 
 - `PORTABLE_EXPORT.json`, `MANIFEST.json`, and `README.txt`
 - `specification/HUMAN_SPEC.md`, `WORKSPACE.json`, `LOGIC_REDUX.txt`, `SENTINELS.json`, `PROMPT_HISTORY.md`, and `SOURCE_ORIGINAL.md`
@@ -73,7 +73,7 @@ The **original portable v0.2.0 archive** is stored under `releases/`. Its source
 - `portability/RESOURCE_ALIASES.json` and `IMPORT_CONTRACT.txt`
 - `history/PROVENANCE.md`
 
-All source paths are repository-relative. The exported resource aliases are deliberately non-reversible; host-specific resources must be explicitly rebound in a receiving environment. A historical snapshot is **not** a claim of live deployment.
+All paths in the source archive are archive-relative. The exported resource aliases are deliberately non-reversible; host-specific resources must be explicitly rebound in a receiving environment. A historical snapshot is **not** a claim of live deployment.
 
 ### Verification
 
