@@ -1,23 +1,25 @@
-# Repository Tags and Release Metadata
+# Repository Description, Topics, and Release Metadata
 
-**Package version:** `v0.2.0`  
 **Repository:** `dastardlyrat/m.A.R.S.-Persistent-Tool-less-Amorphous-Workspace`  
-**Visibility:** private
+**Visibility:** Private (verified 2026-11-01)  
+**Package version:** `v0.2.0` (source publication incomplete)
 
-## Proposed GitHub topics
+## GitHub About description — prepared, not applied
+
+> Portable, durable, tool-less workspace specification for identity, intent, state, orchestration, prompt evaluation, and historical provenance, with human-readable, JSON, and logic representations.
+
+## GitHub topics — prepared, not applied
 
 `mars`, `workspace`, `durable-workspace`, `tool-less`, `amorphous-workspace`, `orchestration`, `agent-identity`, `agent-intent`, `goal-development`, `prompt-history`, `state-tracking`, `resource-inventory`, `sentinel-values`, `portable-specification`, `provenance`.
 
-These are **descriptive** tags. They do not create Git version tags or GitHub repository topics.
+This metadata is stored as documentation and in `metadata/TAGS.json`. **The GitHub About description and actual repository topics have not been changed.** The connected GitHub actions do not provide the required repository-administration update operation.
 
-## Release intent
+To apply in GitHub: open the repository homepage, use the gear icon beside **About**, paste the description, enter the topics individually, and save. Keep visibility **Private**.
 
-The proposed first immutable source release is `v0.2.0`, anchored to the portable export archive with its internal SHA-256 manifest. Do not create the formal release until the source archive has been published and verified.
+## Version tags
 
-The number `13` is preserved as a limiting factor with unresolved semantics. No interpretation is invented.
+The `v0.2.0` Git tag and GitHub Release remain uncreated until the complete portable source package has been committed and verified. Do not treat the package-version field as a Git reference.
 
-## Publication boundary
+## Workspace boundary
 
-Publication metadata provides indexing only. It grants no tool-execution authority, deployment status, or permission to alter repository visibility.
-
-See `metadata/TAGS.json` for the machine-readable descriptive vocabulary.
+These tags are metadata only and grant no runtime authorization, tool implementation, or resource rebinding.
