@@ -1,0 +1,25 @@
+{
+  "schema": "mars-repository-tags/1.0",
+  "package_version": "v0.2.0",
+  "tags": [
+    "mars",
+    "workspace",
+    "durable-workspace",
+    "tool-less",
+    "amorphous-workspace",
+    "orchestration",
+    "agent-identity",
+    "agent-intent",
+    "goal-development",
+    "prompt-history",
+    "state-tracking",
+    "resource-inventory",
+    "sentinel-values",
+    "portable-specification",
+    "provenance"
+  ],
+  "git_tag": "SENTINEL_UNAVAILABLE",
+  "repository_topics": "SENTINEL_UNAVAILABLE",
+  "status": "DESCRIPTIVE_TAGS_ONLY",
+  "note": "These are proposed index terms, not a Git ref, GitHub release, or applied repository topics."
+}
