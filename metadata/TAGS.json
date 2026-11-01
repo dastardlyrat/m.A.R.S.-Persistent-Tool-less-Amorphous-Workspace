@@ -1,6 +1,7 @@
 {
-  "schema": "mars-repository-tags/1.0",
+  "schema": "mars-repository-tags/1.1",
   "package_version": "v0.2.0",
+  "github_about_description": "Portable, durable, tool-less workspace specification for identity, intent, state, orchestration, prompt evaluation, and historical provenance, with human-readable, JSON, and logic representations.",
   "tags": [
     "mars",
     "workspace",
@@ -18,8 +19,27 @@
     "portable-specification",
     "provenance"
   ],
+  "github_topics_requested": [
+    "mars",
+    "workspace",
+    "durable-workspace",
+    "tool-less",
+    "amorphous-workspace",
+    "orchestration",
+    "agent-identity",
+    "agent-intent",
+    "goal-development",
+    "prompt-history",
+    "state-tracking",
+    "resource-inventory",
+    "sentinel-values",
+    "portable-specification",
+    "provenance"
+  ],
+  "github_topics_status": "NOT_APPLIED",
+  "github_description_status": "NOT_APPLIED",
   "git_tag": "SENTINEL_UNAVAILABLE",
   "repository_topics": "SENTINEL_UNAVAILABLE",
-  "status": "DESCRIPTIVE_TAGS_ONLY",
-  "note": "These are proposed index terms, not a Git ref, GitHub release, or applied repository topics."
+  "status": "GITHUB_ABOUT_METADATA_PREPARED_NOT_APPLIED",
+  "note": "Desired metadata only. This does not modify GitHub's repository About description or topics; connected GitHub actions lack administration update operations."
 }
