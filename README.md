@@ -1,6 +1,6 @@
 # m.A.R.S. — Persistent Tool-less Amorphous Workspace
 
-**Portable specification:** v0.2.0 (2026-11-01)  
+**Core specification:** v0.3.0 (extracted from portable v0.2.0)  
 **Status:** conceptual, operator-directed, paper-first, non-executing  
 **Repository visibility:** private (do not make public without explicit authorization)
 
@@ -48,16 +48,9 @@ Trajectory is not necessarily destination; intention is not obligation.
 
 The tools row is an *inventory and design category*, not authorization to construct or invoke tools.
 
-## Goal development / prompt evaluation
+## Extracted component (not in core or seed)
 
-1. **Preflight:** evaluate the prompt logically, historically, and agentically.
-2. **Attempt:** identify what the prompt seeks to accomplish.
-3. **Alignment:** compare it against the greater four-element intent.
-4. **Considerations:** examine normally **2–5** possible responses. **13** remains an explicitly unresolved limiting factor; no invented operational meaning is imposed.
-5. **Preparation:** prepare a response preserving legitimate agent agency, scoped authorization, and refusal rights.
-6. **Review:** evaluate the response **including any queries** for necessity, evidence, scope, and consistency.
-
-The sequence is conceptual; it does not by itself trigger execution.
+The Goal Development protocol was extracted into an independent, non-executing specification. The core and `seed/WORKSPACE_SEED.json` retain only the four intent fields; they contain no prompt-evaluation procedure. The historical v0.2.0 source is retained separately as provenance.
 
 ## Sentinels and evidence
 
@@ -65,7 +58,7 @@ Missing, unknown, unestablished, and inapplicable values require explicit semant
 
 ## Source package and files
 
-The original portable v0.2.0 archive has been validated locally but **has not yet been committed to this repository**. The source manifest (`MANIFEST.json`) records SHA-256 hashes for the 14 content files. Within the source archive, files retain their original relative structure:
+The original v0.2.0 archive is a historical predecessor and has **not been committed to this repository**. The revised v0.3.0 core is published as individual files under `specification/` and `seed/`. The predecessor archive has a SHA-256 manifest. The local revised core v0.3.0 export also has its own manifest. Within the source archive, files retain their original relative structure:
 
 - `PORTABLE_EXPORT.json`, `MANIFEST.json`, and `README.txt`
 - `specification/HUMAN_SPEC.md`, `WORKSPACE.json`, `LOGIC_REDUX.txt`, `SENTINELS.json`, `PROMPT_HISTORY.md`, and `SOURCE_ORIGINAL.md`
