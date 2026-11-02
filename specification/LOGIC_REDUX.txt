@@ -1,0 +1,30 @@
+m.A.R.S. CORE / LOGIC REDUX v0.3.0
+Declarative model, not executable logic.
+
+R = {User, Agent, Workspace, Prompt, History}
+Intent(r,t) = <Goal(r,t), CurrentTask(r,t), TaskQueue(r,t), FinishedTaskQueue(r,t)>
+Identity(r) != Intent(r,t)
+HistoricalIntent(x) != CurrentAuthorization(x)
+FinishedTask(x) != GoalAchieved(x)
+
+STATE = {S1:History,S2:Trajectory,S3:Present,S4:Origin,
+         S5:Destination,S6:Accomplishments,S7:Intentions,S8:Obligations}
+ORCHESTRATION = {Sources,Resources,Tools} x {StartedWith,Obtained,Needed,Acquiring}
+Sources = {O1,O2,O3,O4}
+Resources = {O5,O6,O7,O8}
+Tools = {O9,O10,O11,O12}
+|STATE| = 8; |ORCHESTRATION| = 12
+
+Known(x) != Verified(x)
+Proposed(x) != Approved(x)
+Approved(x) != Implemented(x)
+Implemented(x) != VerifiedUsable(x)
+Unresolved(x) != Absent(x)
+Sentinel(x) != False(x)
+Sentinel(x) != Permission(x)
+NeedTool(x) != AuthorityToImplementTool(x)
+SpecifiesWorkspace(x) != ExecutesWorkspace(x)
+
+EmbeddedGoalDevelopment(Core) = FALSE
+EmbeddedGoalDevelopment(Seed) = FALSE
+NoAutomaticToolExecution = TRUE
