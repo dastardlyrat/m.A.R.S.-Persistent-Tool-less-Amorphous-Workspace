@@ -1,0 +1,162 @@
+{
+  "schema": "mars-core-workspace/0.3.0",
+  "version": "0.3.0",
+  "status": "CONCEPTUAL_PAPER_FIRST",
+  "identity": {
+    "distinct_from_intent": true,
+    "referents": [
+      "user",
+      "agent",
+      "workspace",
+      "prompt",
+      "history"
+    ]
+  },
+  "intent": {
+    "defined_by": [
+      "goal",
+      "current_task",
+      "task_queue",
+      "finished_task_queue"
+    ],
+    "applies_to": [
+      "user",
+      "agent",
+      "workspace",
+      "prompt",
+      "history"
+    ],
+    "completion_implies_goal_achievement": false,
+    "historical_intent_implies_authority": false
+  },
+  "state": {
+    "count": 8,
+    "vectors": [
+      {
+        "id": "S1",
+        "name": "history"
+      },
+      {
+        "id": "S2",
+        "name": "trajectory"
+      },
+      {
+        "id": "S3",
+        "name": "present"
+      },
+      {
+        "id": "S4",
+        "name": "origin"
+      },
+      {
+        "id": "S5",
+        "name": "destination"
+      },
+      {
+        "id": "S6",
+        "name": "accomplishments"
+      },
+      {
+        "id": "S7",
+        "name": "intentions"
+      },
+      {
+        "id": "S8",
+        "name": "obligations"
+      }
+    ]
+  },
+  "orchestration": {
+    "count": 12,
+    "categories": [
+      "sources",
+      "resources",
+      "tools"
+    ],
+    "acquisition_states": [
+      "started_with",
+      "obtained",
+      "needed",
+      "acquiring"
+    ],
+    "vectors": [
+      {
+        "id": "O1",
+        "category": "sources",
+        "acquisition_state": "started_with"
+      },
+      {
+        "id": "O2",
+        "category": "sources",
+        "acquisition_state": "obtained"
+      },
+      {
+        "id": "O3",
+        "category": "sources",
+        "acquisition_state": "needed"
+      },
+      {
+        "id": "O4",
+        "category": "sources",
+        "acquisition_state": "acquiring"
+      },
+      {
+        "id": "O5",
+        "category": "resources",
+        "acquisition_state": "started_with"
+      },
+      {
+        "id": "O6",
+        "category": "resources",
+        "acquisition_state": "obtained"
+      },
+      {
+        "id": "O7",
+        "category": "resources",
+        "acquisition_state": "needed"
+      },
+      {
+        "id": "O8",
+        "category": "resources",
+        "acquisition_state": "acquiring"
+      },
+      {
+        "id": "O9",
+        "category": "tools",
+        "acquisition_state": "started_with"
+      },
+      {
+        "id": "O10",
+        "category": "tools",
+        "acquisition_state": "obtained"
+      },
+      {
+        "id": "O11",
+        "category": "tools",
+        "acquisition_state": "needed"
+      },
+      {
+        "id": "O12",
+        "category": "tools",
+        "acquisition_state": "acquiring"
+      }
+    ]
+  },
+  "sentinel_policy": "EXPLICIT_NAMED_SENTINELS_ONLY",
+  "governance": {
+    "tool_implementation_authorized": false,
+    "automatic_execution": false,
+    "agent_may_choose_authorized_manner_and_means": true,
+    "source_and_provenance_must_be_distinguished": true
+  },
+  "composition": {
+    "role": "CORE_ONLY",
+    "embedded_goal_development": false,
+    "goal_development_dependency": "NONE",
+    "seed_contains_goal_development": false
+  },
+  "unresolved": {
+    "sentinel_registry_status": "SENTINEL_UNRESOLVED",
+    "host_resource_bindings": "SENTINEL_UNRESOLVED"
+  }
+}
