@@ -2,7 +2,7 @@
 
 **Core specification:** v0.3.0 (extracted from portable v0.2.0)  
 **Status:** conceptual, operator-directed, paper-first, non-executing  
-**Repository visibility:** private (do not make public without explicit authorization)
+**Repository visibility:** public (GitHub repository metadata, verified 2026-11-11). **Do not publish private operational records, sensitive data, or unreviewed source material here.**
 
 ## Purpose
 
@@ -77,6 +77,12 @@ All paths in the source archive are archive-relative. The exported resource alia
 5. Read `portability/IMPORT_CONTRACT.txt` before attempting to interpret the snapshot in another environment.
 
 The separate root `README.md` explains this GitHub repository and is **not** part of the original v0.2.0 manifest.
+
+## External error and lesson registry — proposed resource
+
+[External registry development plan](resources/EXTERNAL_ERROR_LESSON_REGISTRY.md) · [Machine-readable resource contract](resources/EXTERNAL_ERROR_LESSON_REGISTRY_CONTRACT.json) · [Resource index](resources/README.md).
+
+A separately hosted microcontroller or developer-board evidence service is proposed to retain **errors, lessons, claim support, canonical conflicts and regression tests**, so a receiving expert-system orchestrator can retrieve and review relevant records **before production admission**. This is an **external resource plan**, not an implemented device, live capability, modified core seed, or production authorization. The core seed's `resource_bindings` remains `SENTINEL_UNRESOLVED`. Failed retrieval is a proposed reason to **keep production locked**, not to synthesize a missing lesson.
 
 ## Durable ≠ self-running
 
