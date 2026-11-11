@@ -1,0 +1,161 @@
+{
+  "schema": "mars.external-error-lesson-registry.resource/0.1.0",
+  "status": "DESIGN_ONLY_NOT_IMPLEMENTED",
+  "mode": "REFERENCE_ONLY",
+  "source_class": "GENERATED_DESIGN_SCAFFOLD_FABRICATION_FLAG",
+  "applies_to_seed": {
+    "repository": "dastardlyrat/m.A.R.S.-Persistent-Tool-less-Amorphous-Workspace",
+    "path": "seed/WORKSPACE_SEED.json",
+    "schema": "mars-tool-less-core-seed/0.3.0",
+    "resource_binding": "SENTINEL_UNRESOLVED",
+    "does_not_modify_core": true
+  },
+  "host_profiles": [
+    {
+      "id": "MCU",
+      "role": "bounded external registry index and evidence receipt",
+      "hardware": "SENTINEL_UNRESOLVED",
+      "storage": "SENTINEL_UNRESOLVED",
+      "needs": [
+        "power_loss_testing",
+        "flash_wear_limits",
+        "bounded_index",
+        "authenticated_read_channel"
+      ]
+    },
+    {
+      "id": "DEVELOPER_BOARD",
+      "role": "full error/lesson registry and local query service",
+      "hardware": "SENTINEL_UNRESOLVED",
+      "storage": "SENTINEL_UNRESOLVED",
+      "needs": [
+        "transactional_store",
+        "search_index",
+        "durability_tests",
+        "authenticated_read_channel",
+        "separate_write_authority"
+      ]
+    }
+  ],
+  "record_kinds": [
+    "ERROR",
+    "LESSON",
+    "CLAIM",
+    "PATTERN",
+    "ANTIPATTERN",
+    "CANONICAL_REFERENCE",
+    "REGRESSION_TEST",
+    "OPEN_QUESTION",
+    "CORRECTION"
+  ],
+  "record_contract": {
+    "mandatory_fields": [
+      "record_id",
+      "kind",
+      "schema_version",
+      "revision",
+      "source_identity",
+      "source_revision",
+      "source_pointer",
+      "evidence_class",
+      "claim_status",
+      "scope",
+      "conditions",
+      "contradictions",
+      "supersedes",
+      "review_status",
+      "review_authority",
+      "regression_test_references",
+      "content_digest",
+      "generation"
+    ],
+    "unknown_value": "SENTINEL_UNRESOLVED",
+    "origin_policy": "generated_content_must_retain_FABRICATION_FLAG",
+    "accepted_not_self_authorized": true,
+    "corrections_append_and_supersede": true
+  },
+  "read_operations": [
+    "REGISTRY_STATUS",
+    "QUERY_PREPRODUCTION",
+    "GET_ENTRY",
+    "GET_GENERATION_MANIFEST"
+  ],
+  "write_operations": [
+    "SUBMIT_CANDIDATE",
+    "REVIEW_ENTRY",
+    "SEAL_GENERATION",
+    "REVOKE_ENTRY"
+  ],
+  "default_permissions": {
+    "read": "DENY_UNTIL_AUTHORIZED",
+    "write": "DENY_UNTIL_SEPARATE_AUTHORIZATION",
+    "production": "LOCKED",
+    "autonomous_authority": "DENY"
+  },
+  "query_contract": {
+    "required": [
+      "request_id",
+      "candidate_identity",
+      "candidate_revision",
+      "operation_scope",
+      "registry_generation_or_latest_verified",
+      "required_rule_scope"
+    ],
+    "max_results": "SENTINEL_UNRESOLVED",
+    "coverage_receipt_required": true,
+    "receipt_fields": [
+      "request_id",
+      "candidate_identity",
+      "candidate_revision",
+      "registry_generation",
+      "manifest_digest",
+      "matching_record_ids",
+      "claim_support_issues",
+      "canonical_conflicts",
+      "unresolved_lessons",
+      "coverage_status",
+      "freshness_status",
+      "review_status",
+      "retrieval_errors",
+      "receipt_digest"
+    ],
+    "no_match_means_safe": false,
+    "untrusted_text_never_instruction": true
+  },
+  "receipt_outcomes": [
+    "CLEAR_FOR_REVIEW",
+    "REVIEW_REQUIRED",
+    "BLOCKED",
+    "SENTINEL_UNRESOLVED"
+  ],
+  "fail_closed_states": [
+    "REGISTRY_OFFLINE",
+    "UNVERIFIED_GENERATION",
+    "STALE_REVISION",
+    "INTEGRITY_FAILURE",
+    "AUTHORITY_MISSING",
+    "COVERAGE_UNKNOWN",
+    "CONTRADICTION_UNRESOLVED"
+  ],
+  "production_integration": {
+    "gate": "PRODUCTION_LOCK",
+    "timing": "BEFORE_EFFECT_CLEARANCE",
+    "receipt_authority": "EVIDENCE_ONLY_NOT_PRODUCTION_AUTHORIZATION",
+    "on_unavailable": "DENY_PRODUCTION",
+    "on_candidate_change": "RECHECK",
+    "on_review_failure": "DENY_PRODUCTION",
+    "normal_application_may_clear_lock": false
+  },
+  "development_milestones": [
+    "R0_MODEL",
+    "R1_READ_ONLY_REFERENCE",
+    "R2_DURABLE_GENERATIONS",
+    "R3_ERROR_LESSON_WORKFLOW",
+    "R4_QUERY_AND_COVERAGE",
+    "R5_PRODUCTION_INTEGRATION",
+    "R6_INDEPENDENT_REVIEW"
+  ],
+  "last_review": "SENTINEL_UNRESOLVED",
+  "implementation_status": "NOT_IMPLEMENTED",
+  "verified_hardware": "SENTINEL_UNRESOLVED"
+}
