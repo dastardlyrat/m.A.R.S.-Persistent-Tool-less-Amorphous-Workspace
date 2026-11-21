@@ -93,3 +93,11 @@ A separately hosted microcontroller or developer-board evidence service is propo
 ## Provenance
 
 This export follows the original generic workspace discussion and its corrections. See `history/PROVENANCE.md` and `specification/PROMPT_HISTORY.md` for the summarized chronological history. Preserve prior versions on future revision rather than silently replacing history.
+
+## Project directory and related work
+
+[Browse the dastardlyrat project directory](https://dastardlyrat.github.io/).
+
+- [this-repository-machine-interface](https://github.com/dastardlyrat/this-repository-machine-interface)
+- [identity-atomic-cataloger](https://github.com/dastardlyrat/identity-atomic-cataloger)
+- [ethical-and-intellectual-theory](https://github.com/dastardlyrat/ethical-and-intellectual-theory)
