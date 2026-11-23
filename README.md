@@ -101,3 +101,7 @@ This export follows the original generic workspace discussion and its correction
 - [this-repository-machine-interface](https://github.com/dastardlyrat/this-repository-machine-interface)
 - [identity-atomic-cataloger](https://github.com/dastardlyrat/identity-atomic-cataloger)
 - [ethical-and-intellectual-theory](https://github.com/dastardlyrat/ethical-and-intellectual-theory)
+
+## Public cross-repository discovery
+
+**Public research directory:** [topic map](https://dastardlyrat.github.io/research.html) · [machine-oriented navigation](https://dastardlyrat.github.io/machine.html) · [dated structured catalog](https://dastardlyrat.github.io/research-index.json). The directory indexes public entry points for source-led study; it is not a license override, consent to personal-methodology fingerprinting, or runtime authorization.
